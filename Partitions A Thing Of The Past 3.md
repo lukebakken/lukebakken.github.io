@@ -22,7 +22,7 @@ has the MBR with grub installed:
 
 Add 512MB SCSI disk 0:1 in VMWare vSphere client:
 
-![vSphere add disk](/images/ubuntu-partitioning-add-disk-vsphere.png)
+![vSphere add disk](images/ubuntu-partitioning-add-disk-vsphere.png)
 
 Use `rescan-scsi-bus.sh` to scan drives. `rescan-scsi-bus.sh` requires that the `scsitools` package be installed and can be downloaded from
 `http://rescan-scsi-bus.sh` (neat huh?)
@@ -114,7 +114,7 @@ Unmount and move existing /boot out of the way:
 
 Shutdown VM. In vSphere client, swap disk settings so that new boot disk is SCSI 0:0 and prior disk is 0:1
 
-![vSphere swap disks](/images/ubuntu-partitioning-swap-disks-vsphere.png)
+![vSphere swap disks](images/ubuntu-partitioning-swap-disks-vsphere.png)
 
 Start VM and confirm:
 
@@ -182,7 +182,7 @@ Enable new swap, disable old:
 
 Shutdown VM and move SCSI disk 0:2 to 0:1 and old 0:1 to 0:2. We want swap to be `/dev/sdb`.
 
-![vSphere swap disks](/images/ubuntu-partitioning-swap-disks-2-vsphere.png)
+![vSphere swap disks](images/ubuntu-partitioning-swap-disks-2-vsphere.png)
 
 Power on VM, confirm:
 
@@ -237,13 +237,13 @@ Create file system. Note: it'll warn you about using the entire device, which is
 Shut down this VM. Create a VM that will run the [Linux System Rescue CD](http://www.sysresccd.org/Download) and edit VM settings to attach the
 original disk (`QA1LRBUBU12.vmdk` in my case) as SCSI 0:0 (`/dev/sda`) and the newest disk (`QA1LRBUBU_3.vmdk`) as SCSI 0:1 (`/dev/sdb`):
 
-![vSphere add disk sysrescue](/images/ubuntu-partitioning-add-disk-sysrescue-vsphere.png)
+![vSphere add disk sysrescue](images/ubuntu-partitioning-add-disk-sysrescue-vsphere.png)
 
-![vSphere add disk sysrescue](/images/ubuntu-partitioning-add-disk-sysrescue-2-vsphere.png)
+![vSphere add disk sysrescue](images/ubuntu-partitioning-add-disk-sysrescue-2-vsphere.png)
 
 Power on the System Rescue VM and confirm disks:
 
-![sysrescue verify](/images/ubuntu-partitioning-3-sysrescue-1.png)
+![sysrescue verify](images/ubuntu-partitioning-3-sysrescue-1.png)
 
 Here you will make mount points and copy files from old root to new root:
 
@@ -262,12 +262,12 @@ the new UUID to the end of the fstab and then you just need to move it around wi
 
 New fstab (the UUID in the / line changed):
 
-![sysrescue verify](/images/ubuntu-partitioning-3-sysrescue-3.png)
+![sysrescue verify](images/ubuntu-partitioning-3-sysrescue-3.png)
 
 Power off the System Rescue VM and detach the disks.  Attach the new boot disk (`QA1LRBUBU12_1.vmdk`) as 0:0 (`/dev/sda`) and the new root file
 system disk (`QA1LRBUBU12_3`.vmdk) as 0:1 (`/dev/sdb`). Power on the System Rescue VM and ensure you have the right disks attached:
 
-![sysrescue verify](/images/ubuntu-partitioning-3-sysrescue-4.png)
+![sysrescue verify](images/ubuntu-partitioning-3-sysrescue-4.png)
 
 We need to update the UUID of the root disk in grub's configuration. There's no easy way to do this other than to replace UUID values in the
 grub configuration file:
@@ -289,7 +289,7 @@ Edit uuid.sh to run this command:
 
 Then, run the command and confirm
 
-![sysrescue verify](/images/ubuntu-partitioning-3-sysrescue-5.png)
+![sysrescue verify](images/ubuntu-partitioning-3-sysrescue-5.png)
 
 Power off the System Rescue VM and detach all disks. In original VM detach the original disk which is SCSI 0:2 and move SCSI 0:3 to 0:2
 
@@ -337,7 +337,7 @@ Power on original VM and confirm. We should also re-run "update-grub" to ensure 
 
 Also, note the difference in physical size vs. provisioned size of the disks:
 
-![sysrescue verify](/images/ubuntu-partitioning-three-disk-datastore-vsphere.png)
+![sysrescue verify](images/ubuntu-partitioning-three-disk-datastore-vsphere.png)
 
 In the next part of this series, I'll look into the LVM feature set and how using partitionless disks in a virtualized environment eliminates
 the need for LVM entirely.
