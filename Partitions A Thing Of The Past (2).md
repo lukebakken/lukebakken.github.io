@@ -1,5 +1,5 @@
-Partitions - A Thing Of The Past (Part 2)
-=========================================
+<!-- vim:fo=tq:tw=144:syntax=off:sw=2:ts=2:
+-->
 
 While searching for solutions to the "online root resize" issue, I came across the [following blog
 post](http://echenh.blogspot.com/2010/04/how-to-extend-lvm-on-vmware-guest-os.html), which contained a comment suggesting that a

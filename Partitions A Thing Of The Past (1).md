@@ -1,7 +1,5 @@
-<!-- vim:fo=tq:tw=144:syntax=off:sw=2:ts=2: -->
-
-Partitions - A Thing Of The Past (Part 1)
-=========================================
+<!-- vim:fo=tq:tw=144:syntax=off:sw=2:ts=2:
+-->
 
 ##TL;DR##
 
