@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/krakken
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.bakken.io
+  * I am krakken (https://keybase.io/krakken) on keybase.
+  * I have a public key with fingerprint E778 02C6 EEEB EABC DC03  2495 1074 AF46 F589 A49C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01206ba73983f58a39e25bb969f6726925b06f121ef03065eaed387fd04750f4152e0a",
+            "fingerprint": "e77802c6eeebeabcdc0324951074af46f589a49c",
+            "host": "keybase.io",
+            "key_id": "1074af46f589a49c",
+            "kid": "0101e3bffb9eb86e442d53e8cfb69f20cd27e11ac303bcd8122477b87b929a0699280a",
+            "uid": "4f222add7ce05560ef284f63f42d6819",
+            "username": "krakken"
+        },
+        "service": {
+            "hostname": "www.bakken.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1452647246,
+    "expire_in": 157680000,
+    "prev": "b6e715d070026e7193e2892e4c2d9fe188ef360e7b70982a00e413ef2971fbbe",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMNtAnicbVJtUFRVGF5ENJiRjwGGqNDZmynER+ee+3HuRQ0ZA2ESKpRi/Nrux7lw
+Y9nd7i4LtGKlNaHMBFgyaSkWKBA0YCGjYCYYToBagVOUwEgjoUAgGTrBJN3d9F/n
+zznve573eZ/nnffbZd4GP69AR1Py7L6aT7x6OyrzDS8frE53EaJVLiLiXUQu9lzY
+LGO7w5SrykQ8AUgIWFFAFM9RCsMJFI8hI4o8yyssgiyvB4BVSEhiBVCAZbCAZYpD
+igxoxACFJhmIgUDEEIpqycaaTVMtDp0WI8QBKLEYYxELoiRLgII0z5AA0YJCs3or
+XqB5SS/MsdrdFbo4UbDjONWq5/TA5JH3P/iHugGJKVFRRB6LHItpGsoMhTlJEXXp
+EEgyRJgkBYkClN6eIyGkERI5JPKQFwDL85Dz6M730NEKhFCQZSRhwDAswArkaIWl
+FJ2W5UjeDbRjzSLkYbdWTcjNxRaiOIbQk05Vwu65uo08ABQUFMSJHsx/fmya1WGV
+rGb9K8fhsMW7Kx1FNg8Ui6YHJCZRtcj6GPUCJ9bsqtVCxJM6UnKoblaSZiBLI0iz
+MQQutKkaNqluBINYDujH3QY7dUqRxYhkZIAAgO4nT2HI8RDTEpR5BZMchxVK94hE
+BHgOCgBgmqR0yzwiFVHEhNvW6xYrEc/pMoVsndKuZlsER76GieLOju2LDV5+hiU+
+i9zrZfDzDXy4dCGxAQtJEe91Rpat9x4vfzSrZCgvQ+waH3zHOe3sOpV+rrss9Mhe
+TVjS+kUmc+eHV3fktbzZVD+54dSmwnev97daKofLjTvPTEfsGk1XL3aPPVNtJJ8o
+TvXKmFpX35acrv11bdRumLE8P9NTN3YSbQm8c7pke6PJR7s0zpTfPrLXxytpn6Wi
+NBptTYRnI4Mu94Lee8TG6K9ipdm5qqM7s34a/q3hF3N0VdizRxc6auOiF70VlVPq
+rPFef+vr5UunKz5fuzaB2Qw6a3wHz95EcReaXwwzOn4fkE9GlcnmhHDfSUNMYsTd
+xYarAfN7bAdeO6eM/XPFTB88k5MUufrixJ9BUYdCRia75or83w7t3j8Qfgl1DW/s
+aej7kgsr/yBw6LmpiULC5WPvfzKuPfZu+IaABfX9K8bQy/uNo6XJC1OZ7VWOOZgY
+HPnHNyc2hxxI+fXvdYebpsNfyGQDUlKvN2bNka+MLD/e2Jjw47H23a6XBtLKau/7
+rshqbTn26emaLUWDK1atPNxWbHz6xFTe7oaft9qWlYKPslL6/FaPVDTXGj+uK8+/
+KWb23HJZPtzTXhiZUW1uGHpKuL8kaPrQG0vp5okL/Wu0iB03xkH2vco07/HU2eBd
+QXVrSufBY9X+k/PDK8Gq49o15Lpx/vGg+kc2Bd+O8J2/2oa29RSVJHw2dr4TfJ/m
+/11LW/+2mb4xv38B6uPBTA==
+=/pvs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/krakken
+
+==================================================================
