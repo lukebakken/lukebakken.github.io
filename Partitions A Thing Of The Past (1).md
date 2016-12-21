@@ -207,4 +207,4 @@ Now all that is left to do is expand the `/` filesystem on `/dev/sda1` with `res
 
 Voila! Except that it requires a reboot!
 
-In Part 2 I'll examine solutions to the reboot issue by discarding the use of partitions altogether when using virtual hardware.
+In [[Part 2|Partitions A Thing Of The Past 2]]Part 2 I'll examine solutions to the reboot issue by discarding the use of partitions altogether when using virtual hardware.

@@ -182,5 +182,5 @@ Also note that since you're using thin provisioned disks, the actual space taken
     UBUNTU-10-64-SERVER-VAR.vmdk  352
     UBUNTU-10-64-SERVER.vmdk      1
 
-In [Part 3](/2013/01/29/partitions-thing-of-the-past-3.html), I'll show how to migrate from a standard Linux setup to a partitionless one
+In [[Part 3|Partitions A Thing Of The Past 3]], I'll show how to migrate from a standard Linux setup to a partitionless one
 without loss of data.
