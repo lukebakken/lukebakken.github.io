@@ -3,7 +3,7 @@
 
 # Overview
 
-This series will document creation of an [Erlang web application](https://github.com/FriendsOfTheBluff/volunteer-mgr] from the ground up. The goal of this application is to provide basic tracking of volunteers for a [local non-profit group](http://www.friendsofthebluff.org/), based loosely on [this project](http://sos.sourceforge.net/).
+This series will document creation of an [Erlang web application](https://github.com/FriendsOfTheBluff/volunteer-mgr) from the ground up. The goal of this application is to provide basic tracking of volunteers for a [local non-profit group](http://www.friendsofthebluff.org/), based loosely on [this project](http://sos.sourceforge.net/).
 
 # Goals
 
