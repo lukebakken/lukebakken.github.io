@@ -45,3 +45,19 @@ However, I got the following error when running tests:
 Looks like the ["table must at least have one extra attribute in addition to the key"](http://erlang.org/doc/man/mnesia.html#create_table-2).
 
 Once I added the `active` attribute, the test passed.
+
+## Writing Multiple Entities
+
+For a test, I needed to write multiple tags to the database, but `mnesia:write` only works on single records. Ideally, every write would be contained in the same transaction, as well. I needed a recursive anonymous function with multiple clauses, but ran into a compilation issue concerning the variable bound to the function. Some googling revealed that OTP 17 supports "named anonymous functions" which is what I used:
+
+```erlang
+create_tags(Tags) ->
+    Records = [#volmgr_tags{id=Tag, active=true} || Tag <- Tags],
+    Writer = fun W([]) ->
+                 ok;
+             W([Record|T]) ->
+                 mnesia:write(Record),
+                 W(T)
+             end,
+    mnesia:activity(transaction, Writer, [Records], mnesia).
+```
