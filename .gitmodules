@@ -1,0 +1,4 @@
+[submodule "cc-presentation-20170619"]
+	path = cc-presentation-20170619
+	url = https://github.com/lukebakken/reveal.js-presentations.git
+	branch = cc-presentation-20170619
